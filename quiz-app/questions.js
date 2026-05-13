@@ -8,7 +8,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "easy",
-    "question": "An architect should summarize Morpheus value to management. Which set describes the platform's five pillars?",
+    "question": "An architect needs to summarize the value of Morpheus for management. Which set describes the platform's five pillars?",
     "options": [
       "Provision, Secure, Patch, Report, Backup",
       "Discover, Migrate, Govern, Archive, Chargeback",
@@ -42,7 +42,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Users want to request resources themselves from a shared portal across multiple clouds. Which Morpheus pillar addresses this?",
+    "question": "Users need to request resources from a shared portal across multiple clouds. Which Morpheus pillar addresses this?",
     "options": [
       "To give users a single console and self-service provisioning across private and public clouds",
       "To set policy priority between Cloud, Group and Global",
@@ -59,10 +59,10 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "multi",
     "difficulty": "hard",
-    "question": "An organization wants to use Morpheus to control access, isolate environments and enforce controls. What functions belong to the Govern pillar?",
+    "question": "An organization wants to use Morpheus to control access, isolate environments, and enforce controls. Which capabilities are part of the Govern pillar?",
     "options": [
       "Policies aimed at groups, clouds, users or roles",
-      "Golden image build automation as main objective",
+      "Golden image build automation as the primary purpose",
       "Multi-tenancy for isolated environments",
       "Fine-grained RBAC via groups"
     ],
@@ -180,12 +180,12 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You dimension the non-transactional tier. What kind of data does Elasticsearch handle in Morpheus?",
+    "question": "You are sizing the non-transactional tier. What kind of data does Elasticsearch handle in Morpheus?",
     "options": [
       "Log aggregation and temporal data such as stats, metrics and logs",
       "Message queuing between application services",
       "SSL termination and cache proxy",
-      "Primary transaction database for logistic data"
+      "Primary transaction database for application data"
     ],
     "answer": 0,
     "explanation": "Elasticsearch is non-transactional tier for log aggregation and temporal aggregation data (course page 22).",
@@ -214,7 +214,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "easy",
-    "question": "You are planning the installation of the Morpheus appliance. What type of platform should you expect?",
+    "question": "You are planning a Morpheus appliance installation. What platform type should you expect?",
     "options": [
       "Container-only SaaS deployment",
       "Windows Server-based appliance",
@@ -231,7 +231,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "easy",
-    "question": "After changing the Morpheus configuration, you need to apply the changes. What command are you using?",
+    "question": "After changing Morpheus configuration, which command applies the changes?",
     "options": [
       "morpheus-ctl reconfigure",
       "morpheus-ctl reload-config",
@@ -248,7 +248,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You should change the main appliance configuration. Which file should you edit?",
+    "question": "You need to change the main appliance configuration. Which file should you edit?",
     "options": [
       "/opt/morpheus/conf/logback.xml",
       "/var/opt/morpheus/config.yml",
@@ -282,7 +282,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "easy",
-    "question": "You should check the status and restart the Morpheus services from the CLI. What tool do you use?",
+    "question": "You need to check status and restart Morpheus services from the CLI. Which tool should you use?",
     "options": [
       "morpheus agent",
       "morpheus-cli only",
@@ -299,7 +299,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You verify which services are available in an all-in-one Morpheus appliance. What services are included?",
+    "question": "You are verifying an all-in-one Morpheus appliance. Which services are included?",
     "options": [
       "morpheus-ui",
       "rabbitmq",
@@ -371,9 +371,9 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "A user should get the right UI view in Morpheus. Which personas are there in the platform?",
+    "question": "A user needs the correct UI view in Morpheus. Which personas are available in the platform?",
     "options": [
-      "Service Catalogue",
+      "Service Catalog",
       "Virtual Desktop",
       "Costing Only",
       "Standard"
@@ -392,7 +392,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "mc",
     "difficulty": "easy",
-    "question": "You must give a team access to the right clouds and instances. What is a Group in Morpheus?",
+    "question": "A team needs access to the correct clouds and instances. What is a Group in Morpheus?",
     "options": [
       "A logical container and RBAC scope for clouds and instances",
       "A pricing model for compute and storage",
@@ -409,7 +409,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You add vCenter, AWS or Azure to Morpheus. What does the object Cloud represent?",
+    "question": "You add vCenter, AWS, or Azure to Morpheus. What does a Cloud represent?",
     "options": [
       "A tenant role that controls maximum permissions",
       "A service plan linked to price sets",
@@ -426,7 +426,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You will add a private cloud integration in Morpheus. Which options are examples of private cloud types?",
+    "question": "You are adding a private cloud integration in Morpheus. Which options are examples of private cloud types?",
     "options": [
       "OpenStack",
       "Slack",
@@ -447,7 +447,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You are going to add a public cloud integration in Morpheus. What options are public cloud types?",
+    "question": "You are adding a public cloud integration in Morpheus. Which options are examples of public cloud types?",
     "options": [
       "Azure",
       "Infoblox",
@@ -473,7 +473,7 @@ const QUESTIONS = [
       "Centrally managed and reusable credentials",
       "An inventory mode for discovered resources",
       "A secure key/value store for automation",
-      "A way to limit plane visibility per group"
+      "A way to limit plan visibility per group"
     ],
     "answer": 0,
     "explanation": "Credentials are used centrally and can be reused between integrations (course page 54).",
@@ -511,7 +511,7 @@ const QUESTIONS = [
       "Rotates all user passwords and Cypher secrets",
       "Converts discovered VMs to managed instances",
       "Restarting appliance services after backup",
-      "Run intensive operations such as pricing and AWS guidance recommendations"
+      "Runs intensive operations such as pricing and AWS guidance recommendations"
     ],
     "answer": 3,
     "explanation": "Nightly sync is used for intensive operations such as pricing and AWS Guidance Recommendations (course page 55).",
@@ -580,7 +580,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "easy",
-    "question": "You explain the access model to a new administrator. Which objects are mainly used for access control in the module?",
+    "question": "You are explaining the access model to a new administrator. Which objects are primarily used for access control in this module?",
     "options": [
       "Users and Roles",
       "Plans and Price Sets",
@@ -597,11 +597,11 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "medium",
-    "question": "A user should get some menus and resources but not others. What governs a User Role?",
+    "question": "A user should see some menus and resources but not others. What does a User Role control?",
     "options": [
       "Which prices are included in a price set",
       "Which images are synced from public clouds",
-      "What a user gets to see and do in Morpheus",
+      "What a user can see and do in Morpheus",
       "Which services run on the appliance"
     ],
     "answer": 2,
@@ -684,7 +684,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Mega Corp wants to design RBAC according to teams and environments. What should the strategy be primarily based on?",
+    "question": "Mega Corp wants to design RBAC around teams and environments. What should the strategy primarily be based on?",
     "options": [
       "Which currency each tenant uses",
       "Which browser the users are running",
@@ -756,7 +756,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "mc",
     "difficulty": "medium",
-    "question": "A select field must be filled with checked choices. What is an Option List?",
+    "question": "A select field must be populated with controlled choices. What is an Option List?",
     "options": [
       "A source of selectable options for inputs",
       "A monitoring group with several checks",
@@ -773,9 +773,9 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You want to populate a select field dynamically with values. What sources can an Option List use?",
+    "question": "You need to populate a select field dynamically. Which sources can an Option List use?",
     "options": [
-      "RESIDUAL",
+      "REST",
       "LDAP",
       "Cypher",
       "Manual",
@@ -879,7 +879,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You must limit and control provisioning with policies. What are examples of policy types?",
+    "question": "You must limit and control provisioning with policies. Which options are examples of policy types?",
     "options": [
       "Backup",
       "Expire Date",
@@ -902,7 +902,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "medium",
-    "question": "A provisioning flow must require approval before resources are created. What policy type is used?",
+    "question": "A provisioning flow must require approval before resources are created. Which policy type is used?",
     "options": [
       "Approve Delete Policy",
       "Tag Compliance Policy",
@@ -919,7 +919,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "hard",
-    "question": "An instance matches both a global policy and a group policy. What policy applies?",
+    "question": "An instance matches both a global policy and a group policy. Which policy applies?",
     "options": [
       "Both policies are ignored until an admin chooses",
       "The policy created last always wins",
@@ -953,7 +953,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Hard limits stop the action, while soft limits can be used for warning or softer control.",
+    "question": "Hard limits stop an action, while soft limits can be used for warning or softer control.",
     "options": [
       "True",
       "False"
@@ -968,7 +968,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Development systems at Mega Corp shall automatically expire after 20 days. Which policy fits?",
+    "question": "Development systems at Mega Corp should automatically expire after 20 days. Which policy fits?",
     "options": [
       "Power Schedule Policy",
       "Budget Policy",
@@ -976,7 +976,7 @@ const QUESTIONS = [
       "Expire Date Policy"
     ],
     "answer": 3,
-    "explanation": "Training scenario specifies that the development system should expire after 20 days (course page 13).",
+    "explanation": "The training scenario specifies that development systems should expire after 20 days (course page 13).",
     "sourcePage": 13
   },
   {
@@ -1051,7 +1051,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You configure an instance type for different clouds or versions. What defines a Layout?",
+    "question": "You configure an Instance Type for different clouds or versions. What does a Layout define?",
     "options": [
       "The technology and configuration of how an instance type is provisioned",
       "A tenant-isolated environment",
@@ -1085,7 +1085,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "What do Virtual Images represent?",
+    "question": "What do Virtual Images represent in Morpheus?",
     "options": [
       "A provisioning workflow phase",
       "An RBAC permission group",
@@ -1102,7 +1102,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You configure images for provisioning. What virtual image types exist in Morpheus?",
+    "question": "You are configuring images for provisioning. Which virtual image types exist in Morpheus?",
     "options": [
       "Local uploaded user virtual images",
       "Incident virtual images",
@@ -1146,11 +1146,11 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Development and Production need the same Ubuntu foundation but different access/naming. Why does an instance type fit with two layouts?",
+    "question": "Development and Production need the same Ubuntu base but different access and naming. Why does one Instance Type with two Layouts fit this case?",
     "options": [
       "Because each layout must have its own master tenant",
       "Because price sets cannot be linked to instance types",
-      "Because Development and Production have different group access/naming needs but the same basic type",
+      "Development and Production have different group access and naming needs but the same base type",
       "Because monitoring groups can only be linked to layouts"
     ],
     "answer": 2,
@@ -1184,7 +1184,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You design agent communication through firewall. How does the Morpheus agent normally connect to the appliance?",
+    "question": "You are designing agent communication through a firewall. How does the Morpheus agent normally connect to the appliance?",
     "options": [
       "AMQP directly to RabbitMQ on port 5672",
       "Inbound SSH from appliance on port 22",
@@ -1201,7 +1201,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You activate inventory on a cloud integration. Which inventory levels can be selected?",
+    "question": "You enable inventory on a cloud integration. Which inventory levels can be selected?",
     "options": [
       "Basic",
       "Full",
@@ -1222,7 +1222,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "tf",
     "difficulty": "medium",
-    "question": "A discovered VM can be converted to managed instance without additional WLE in addition to the WLE already used for the discovered server.",
+    "question": "A discovered VM can be converted to a managed instance without consuming additional WLE beyond the WLE already used for the discovered server.",
     "options": [
       "False",
       "True"
@@ -1240,7 +1240,7 @@ const QUESTIONS = [
     "question": "You want to stop managing a VM in Morpheus but keep it in the target cloud. What delete behavior corresponds to this?",
     "options": [
       "To delete both instance and VM permanently",
-      "To create a new usage record for the WC",
+      "To create a new usage record for the VM",
       "To install the Morpheus agent on the VM",
       "To unmanage the object in Morpheus without deleting the VM in the target cloud"
     ],
@@ -1254,7 +1254,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "easy",
-    "question": "An MSP wants to isolate customers in the same Morpheus appliance. What gives Tenants?",
+    "question": "An MSP wants to isolate customers in the same Morpheus appliance. What do Tenants provide?",
     "options": [
       "A collection of checks for app monitors",
       "A connection between price sets and plans",
@@ -1288,7 +1288,7 @@ const QUESTIONS = [
     "difficulty": "medium",
     "question": "How many levels of subtenancy are supported?",
     "options": [
-      "A level",
+      "One level",
       "Two levels",
       "Unlimited number",
       "No subtenancy"
@@ -1320,7 +1320,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "medium",
-    "question": "A subtenant gets a base role. What does the tenant role put into practice?",
+    "question": "A subtenant receives a base role. What does the Tenant Role enforce in practice?",
     "options": [
       "Which cloud costing mode is active",
       "Which Service Catalog tab appears first",
@@ -1356,7 +1356,7 @@ const QUESTIONS = [
     "options": [
       "In all subtenants",
       "Only on the cloud detail page",
-      "Only in master tenancy",
+      "Only in the master tenant",
       "Only via Billing API"
     ],
     "answer": 2,
@@ -1369,12 +1369,12 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You compare single tenant and multi-tenant user roles. Which description is correct?",
+    "question": "You compare single-tenant and multi-tenant user roles. Which description is correct?",
     "options": [
       "They are identical in every respect",
       "Multi-tenant roles are only used for monitoring",
       "Single tenant roles are only used for invoices",
-      "Single tenant roles are created/live in a subtenant; multi-tenant roles are created in root and copied to subtenants"
+      "Single-tenant roles are created in a subtenant; multi-tenant roles are created in root and copied to subtenants"
     ],
     "answer": 3,
     "explanation": "The course distinguishes between user roles created in subtenant and multi-tenant roles created in root/master (course page 110).",
@@ -1468,7 +1468,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "A private Git repo should be used in Morpheus automation. What is required?",
+    "question": "A private Git repo must be used in Morpheus automation. What is required?",
     "options": [
       "Only one tenant role in the master tenant",
       "Authentication via PAT and SSH keys",
@@ -1476,7 +1476,7 @@ const QUESTIONS = [
       "Auto Create checks activated in Monitoring settings"
     ],
     "answer": 1,
-    "explanation": "Private repo needs authentication via PAT and SSH keys (course page 123).",
+    "explanation": "Private repos require authentication via PAT and SSH keys (course page 123).",
     "sourcePage": 123
   },
   {
@@ -1502,7 +1502,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "easy",
-    "question": "You need to store secrets for automation. What is Cypher?",
+    "question": "You need to store secrets for automation. What is Cypher in Morpheus?",
     "options": [
       "An engine for invoice line items",
       "A public cloud service plan",
@@ -1527,7 +1527,7 @@ const QUESTIONS = [
       "SELECT cypher(varname)"
     ],
     "answer": 0,
-    "explanation": "The course displays Cypher values as Morpheus variable via cypher.read (course page 125).",
+    "explanation": "The course shows Cypher values as Morpheus variables via cypher.read (course page 125).",
     "sourcePage": 125
   },
   {
@@ -1536,7 +1536,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You create a Task and must choose where it runs. What target options are there?",
+    "question": "You create a Task and must choose where it runs. Which target options are available?",
     "options": [
       "Resource",
       "Remote",
@@ -1572,7 +1572,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You want to run a workflow manually, scheduled or via service catalog. Which workflow type do you use?",
+    "question": "You want to run a workflow manually, on a schedule, or through the service catalog. Which workflow type do you use?",
     "options": [
       "Operational Workflow",
       "Price Phase Task",
@@ -1606,7 +1606,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "multi",
     "difficulty": "hard",
-    "question": "You connect script templates to the provisioning life cycle. Which phases can be used?",
+    "question": "You attach script templates to the provisioning lifecycle. Which phases can be used?",
     "options": [
       "Teardown",
       "Currency conversion",
@@ -1631,7 +1631,7 @@ const QUESTIONS = [
     "difficulty": "medium",
     "question": "You need to generate configuration files with variables during automation. What do File Templates do?",
     "options": [
-      "Generates configuration files with variable support for automation",
+      "Generate configuration files with variable support for automation",
       "Syncs public cloud prices nightly",
       "Starts workflows according to boot order",
       "Creates tenant roles from master tenant"
@@ -1663,9 +1663,9 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "In the Mega Corp automation lab, Morpheus will use code from the repo. What is done first?",
+    "question": "In the Mega Corp automation lab, Morpheus will use code from a repository. What is done first?",
     "options": [
-      "Adds Git repo integration so tasks can use code",
+      "Add Git repo integration so tasks can use code",
       "Enables cloud costing on the public cloud",
       "Creates alert rules for Rocket app",
       "Creates Service Catalog Persona"
@@ -1697,7 +1697,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You will create an IaC-based blueprint. What technologies are supported by Morpheus blueprints?",
+    "question": "You need to create an IaC-based blueprint. Which technologies are supported by Morpheus blueprints?",
     "options": [
       "Helm",
       "Terraform",
@@ -1720,7 +1720,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "A user should provision an app from a blueprint. Where can this be done?",
+    "question": "A user needs to provision an app from a blueprint. Where can this be done?",
     "options": [
       "Administration > Health or Appliance settings",
       "Infrastructure > Networks > Proxies",
@@ -1771,9 +1771,9 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "multi",
     "difficulty": "hard",
-    "question": "You create an IaC blueprint and need to specify the source of the code. What sources are supported?",
+    "question": "You create an IaC blueprint and need to specify the code source. Which sources are supported?",
     "options": [
-      "From integrated Git repo",
+      "Integrated Git repo",
       "Via the Morpheus spec template",
       "Directly in the blueprint configuration",
       "Via invoice line items"
@@ -1792,7 +1792,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Mega Corp will provision Rocket Parts as a blueprint. What architecture is used?",
+    "question": "Mega Corp needs to provision Rocket Parts as a blueprint. Which architecture is used?",
     "options": [
       "Two tiers: Custom MySQL database and Apache/PHP application",
       "Four checks: DNS, SMTP, ICMP and TCP",
@@ -1828,7 +1828,7 @@ const QUESTIONS = [
     "options": [
       "Because tenant roles require two blueprint configurations",
       "Because public cloud plans cannot be synced nightly",
-      "For production-like test environment with smaller instances and development group-scope",
+      "For production-like testing with smaller instances and development group scope",
       "Because Service Catalog Persona cannot display production items"
     ],
     "answer": 2,
@@ -1858,7 +1858,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "multi",
     "difficulty": "easy",
-    "question": "You build monitoring for an application in Morpheus. What main parts are included?",
+    "question": "You are building monitoring for an application in Morpheus. Which main parts are included?",
     "options": [
       "Incidents",
       "Checks",
@@ -1903,7 +1903,7 @@ const QUESTIONS = [
       "Slack hook",
       "Usage record",
       "Web hook",
-      "Victor Oops",
+      "VictorOps",
       "Email/SMS"
     ],
     "answer": [
@@ -2015,12 +2015,12 @@ const QUESTIONS = [
     "question": "You enable syslog forwarding for managed VMs. Which component sends the logs?",
     "options": [
       "Nginx reverse proxy, not the agent",
-      "MySQL router, not appliance",
+      "MySQL router, not the appliance",
       "RabbitMQ cluster, not the agent",
-      "Morpheus agent, not appliance"
+      "Morpheus agent, not the appliance"
     ],
     "answer": 3,
-    "explanation": "The course notes that the agent forwards logs at syslog forwarding, not the appliance (course page 147).",
+    "explanation": "The course notes that the agent forwards logs during syslog forwarding, not the appliance (course page 147).",
     "sourcePage": 147
   },
   {
@@ -2046,10 +2046,10 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You set up monitoring for the Mega Corps Rocket app. What checks are included in the lab scenario?",
+    "question": "You set up monitoring for Mega Corp's Rocket app. Which checks are included in the lab scenario?",
     "options": [
       "MySQL",
-      "WC",
+      "VM",
       "PHP",
       "DNS",
       "Apache"
@@ -2101,7 +2101,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You must create a new catalog item. Where is it done in UI?",
+    "question": "You must create a new catalog item. Where is this done in the UI?",
     "options": [
       "Provisioning > Apps > Catalog Items",
       "Monitoring > Alert Rules",
@@ -2118,7 +2118,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "medium",
-    "question": "An administrator must create or change catalog items. What role authorization is required?",
+    "question": "An administrator must create or change catalog items. Which role permission is required?",
     "options": [
       "Library: Catalog Items = Full",
       "Plans: Pricing = Full",
@@ -2141,7 +2141,7 @@ const QUESTIONS = [
       "True"
     ],
     "answer": 1,
-    "explanation": "The course says that Instance and Blueprint catalog items use provisioning wizard to capture configuration settings (course page 154).",
+    "explanation": "The course says that Instance and Blueprint catalog items use the provisioning wizard to capture configuration settings (course page 154).",
     "sourcePage": 154
   },
   {
@@ -2184,7 +2184,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "easy",
-    "question": "A user must request resources via self-service. Which persona is used?",
+    "question": "A user must request resources through self-service. Which persona is used?",
     "options": [
       "Standard Persona only",
       "Service Catalog Persona",
@@ -2201,13 +2201,13 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "multi",
     "difficulty": "medium",
-    "question": "A self-service user opens the Service Catalog persona. What tabs are there?",
+    "question": "A self-service user opens the Service Catalog persona. Which tabs are available?",
     "options": [
       "Order History",
       "Dashboard",
       "Instances",
       "Budgets",
-      "Catalogue"
+      "Catalog"
     ],
     "answer": [
       0,
@@ -2224,13 +2224,13 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "tf",
     "difficulty": "medium",
-    "question": "The service catalog view is also available from the default persona.",
+    "question": "The service catalog view is also available from the Standard persona.",
     "options": [
       "False",
       "True"
     ],
     "answer": 1,
-    "explanation": "The course states that service catalog view also available from within standard persona (course page 155).",
+    "explanation": "The course states that the service catalog view is also available from within the Standard persona (course page 155).",
     "sourcePage": 155
   },
   {
@@ -2283,7 +2283,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Where to find Plans & Pricing in UI?",
+    "question": "Where in the UI do you find Plans & Pricing?",
     "options": [
       "Administration > Plans & Pricing",
       "Library > Blueprints > Catalog Items",
@@ -2300,15 +2300,15 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You choose the CPU, memory and size during provisioning. What do Service Plans control?",
+    "question": "You choose CPU, memory, and size during provisioning. What do Service Plans control?",
     "options": [
-      "What checks are included in app monitor",
+      "Which checks are included in an app monitor",
       "Which Git branch automation to use",
-      "Compute amount when provisioning and reconfigure",
+      "Compute amount during provisioning and reconfigure",
       "Which tenant roles are copied to subtenants"
     ],
     "answer": 2,
-    "explanation": "Service Plans control amount of compute a resource has during provisioning and reconfigure (course page 161).",
+    "explanation": "Service Plans control the amount of compute a resource has during provisioning and reconfigure (course page 161).",
     "sourcePage": 161
   },
   {
@@ -2332,7 +2332,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "What does the course recommend for public cloud service plans not to use?",
+    "question": "What does the course recommend for public cloud service plans that should not be used?",
     "options": [
       "Disable them instead of deleting them",
       "Convert them to private cloud plans",
@@ -2349,15 +2349,15 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You price compute, memory or storage. What do Prices define?",
+    "question": "You are pricing compute, memory, or storage. What do Prices define?",
     "options": [
-      "Combines several service plans into one tenant role",
-      "Control which Groups get to see a cloud integration",
-      "Creates invoice records directly from the public cloud API",
-      "Defines what is priced, amount, price unit, cost/markup/price and can be added to price sets"
+      "Combining several service plans into one tenant role",
+      "Controlling which Groups can see a cloud integration",
+      "Creating invoice records directly from the public cloud API",
+      "Defining what is priced, the amount, the price unit, cost/markup/price, and how it can be added to price sets"
     ],
     "answer": 3,
-    "explanation": "Prices configures what you want to price and how much, including units, costs, markups and currencies (course page 164).",
+    "explanation": "Prices configure what you want to price and how much, including units, costs, markups and currencies (course page 164).",
     "sourcePage": 164
   },
   {
@@ -2366,10 +2366,10 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You want to connect several prices to a plan. What do Price Sets do?",
+    "question": "You need to attach several prices to a plan. What do Price Sets do?",
     "options": [
-      "Activates guidance recommendations on a cloud",
-      "Combines one or more prices and is linked to plans, instance types or layouts",
+      "Activate guidance recommendations on a cloud",
+      "Combine one or more Prices and attach them to Plans, Instance Types, or Layouts",
       "Defines CPU and memory during provisioning",
       "Stores each individual hourly cost in an invoice"
     ],
@@ -2385,7 +2385,7 @@ const QUESTIONS = [
     "difficulty": "medium",
     "question": "You are reviewing metered pricing for a resource. What are Usage Records?",
     "options": [
-      "Lowest level itinerary item to track costs against resources",
+      "The lowest-level itinerary item used to track costs against resources",
       "A price adjustment on a service plan",
       "A dashboard for utilization vs cost",
       "A monthly compilation of invoice line items"
@@ -2408,7 +2408,7 @@ const QUESTIONS = [
       "Cloud costing is automatically turned off"
     ],
     "answer": 1,
-    "explanation": "Changes to resource results in new usage records (course page 167).",
+    "explanation": "Changes to a resource result in new usage records (course page 167).",
     "sourcePage": 167
   },
   {
@@ -2517,7 +2517,7 @@ const QUESTIONS = [
       "Annual granularity and is created at budget close"
     ],
     "answer": 0,
-    "explanation": "Invoices generated nightly and provide cost data at month granularity (course page 174).",
+    "explanation": "Invoices are generated nightly and provide cost data at month granularity (course page 174).",
     "sourcePage": 174
   },
   {
@@ -2534,7 +2534,7 @@ const QUESTIONS = [
       "Line items are split into second-based items"
     ],
     "answer": 2,
-    "explanation": "Line items have a granularity of one hour and usage during one hour is rounded up to one hour's cost (course page 176).",
+    "explanation": "Line items have one-hour granularity, and usage under one hour is rounded up to one hour of cost (course page 176).",
     "sourcePage": 176
   },
   {
@@ -2551,7 +2551,7 @@ const QUESTIONS = [
       "When costing is enabled on the cloud"
     ],
     "answer": 3,
-    "explanation": "Actual cost type is used when costing is enabled on cloud (course page 177).",
+    "explanation": "Actual cost type is used when costing is enabled on the cloud (course page 177).",
     "sourcePage": 177
   },
   {
@@ -2577,7 +2577,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You want to use ready-made costing reports. How many predefined report types are mentioned?",
+    "question": "You want to use prebuilt costing reports. How many predefined report types are mentioned?",
     "options": [
       "14",
       "3",
@@ -2594,7 +2594,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "You want to use ready-made analytics dashboards. How many predefined analytics dashboards are mentioned?",
+    "question": "You want to use prebuilt analytics dashboards. How many predefined analytics dashboards are mentioned?",
     "options": [
       "4",
       "14",
@@ -2611,7 +2611,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "multi",
     "difficulty": "medium",
-    "question": "You activate cost guidance and rightsizing. What time periods can the recommendations be based on?",
+    "question": "You enable cost guidance and rightsizing. Which time periods can recommendations be based on?",
     "options": [
       "60 days",
       "90 days",
@@ -2646,7 +2646,7 @@ const QUESTIONS = [
       2,
       3
     ],
-    "explanation": "Budgets scoped to accounts, tenants, clouds, groups or users (course page 182).",
+    "explanation": "Budgets can be scoped to accounts, tenants, clouds, groups, or users (course page 182).",
     "sourcePage": 182
   },
   {
