@@ -48,7 +48,7 @@
     moduleCheckboxes.innerHTML = "";
     sorted.forEach(([num, info]) => {
       const wrapper = document.createElement("label");
-      wrapper.innerHTML = `<input type="checkbox" value="${num}" checked /> Modul ${num} – ${info.name} (${info.count})`;
+      wrapper.innerHTML = `<input type="checkbox" value="${num}" checked /> Module ${num} - ${info.name} (${info.count})`;
       moduleCheckboxes.appendChild(wrapper);
     });
 
@@ -101,16 +101,16 @@
   function startQuiz() {
     const cfg = getConfig();
     if (cfg.modules.length === 0) {
-      alert("Välj minst en modul.");
+      alert("Select at least one module.");
       return;
     }
     if (cfg.types.length === 0) {
-      alert("Välj minst en frågetyp.");
+      alert("Select at least one question type.");
       return;
     }
     const queue = buildQueue(cfg);
     if (queue.length === 0) {
-      alert("Inga frågor matchar dina kriterier.");
+      alert("No questions match your criteria.");
       return;
     }
     STATE.pool = queue;
@@ -139,12 +139,12 @@
     checkBtn.disabled = false;
     nextBtn.textContent =
       STATE.currentIndex === STATE.queue.length - 1
-        ? "Visa resultat"
-        : "Nästa fråga";
+        ? "Show results"
+        : "Next question";
 
     const total = STATE.queue.length;
     const cur = STATE.currentIndex + 1;
-    progressText.textContent = `Fråga ${cur} av ${total}`;
+    progressText.textContent = `Question ${cur} of ${total}`;
     progressFill.style.width = `${((cur - 1) / total) * 100}%`;
 
     let inputName = `q_${q.id}`;
@@ -175,12 +175,12 @@
 
     const answerHint =
       q.type === "multi"
-        ? `<p class="question-hint">Välj exakt ${q.answer.length} alternativ.</p>`
+        ? `<p class="question-hint">Select exactly ${q.answer.length} options.</p>`
         : "";
 
     questionContainer.innerHTML = `
       <div>
-        <span class="module-tag">Modul ${q.module} – ${q.moduleName}</span>
+        <span class="module-tag">Module ${q.module} - ${q.moduleName}</span>
         <span class="difficulty-tag">${labelDifficulty(q.difficulty)} · ${labelType(q)}</span>
       </div>
       <p class="question">${formatQuestion(q)}</p>
@@ -208,22 +208,22 @@
   }
 
   function labelDifficulty(d) {
-    if (d === "easy") return "Lätt";
-    if (d === "medium") return "Medel";
-    return "Svår";
+    if (d === "easy") return "Easy";
+    if (d === "medium") return "Medium";
+    return "Hard";
   }
 
   function labelType(q) {
     if (q.type === "mc") return "Multiple choice";
-    if (q.type === "multi") return `Flera svar · välj ${q.answer.length}`;
-    return "Sant/Falskt";
+    if (q.type === "multi") return `Multiple answers · select ${q.answer.length}`;
+    return "True/False";
   }
 
   function formatQuestion(q) {
     if (q.type !== "multi") return q.question;
     return q.question
-      .replace(/\s*\(Välj alla som stämmer\)\.?$/i, "")
-      .replace(/\s*\(Välj \d+\.\)\.?$/i, "");
+      .replace(/\s*\(Select all that apply\)\.?$/i, "")
+      .replace(/\s*\(Select \d+\.\)\.?$/i, "");
   }
 
   // ---------- Check answer ----------
@@ -236,18 +236,18 @@
         (i) => Number(i.value)
       );
       if (userAnswer.length === 0) {
-        alert("Välj minst ett alternativ.");
+        alert("Select at least one option.");
         return;
       }
       const expectedCount = Array.isArray(q.answer) ? q.answer.length : 1;
       if (userAnswer.length !== expectedCount) {
-        alert(`Välj exakt ${expectedCount} alternativ.`);
+        alert(`Select exactly ${expectedCount} options.`);
         return;
       }
     } else {
       const radio = $('#question-container input[type="radio"]:checked');
       if (!radio) {
-        alert("Välj ett alternativ.");
+        alert("Select one option.");
         return;
       }
       userAnswer = Number(radio.value);
@@ -313,7 +313,7 @@
 
     explanationEl.classList.remove("hidden");
     explanationEl.innerHTML = `
-      <strong>${correct ? "✓ Rätt!" : "✗ Fel"}</strong>
+      <strong>${correct ? "✓ Correct!" : "✗ Incorrect"}</strong>
       ${q.explanation}
     `;
   }
@@ -328,7 +328,7 @@
   }
 
   function updateScoreDisplay() {
-    scoreDisplay.textContent = `Poäng: ${STATE.score} / ${STATE.answeredCount}`;
+    scoreDisplay.textContent = `Score: ${STATE.score} / ${STATE.answeredCount}`;
   }
 
   // ---------- Results ----------
@@ -347,10 +347,10 @@
 
     let msg;
     if (pct >= 85)
-      msg = "Utmärkt resultat! Du verkar väl förberedd för provet.";
-    else if (pct >= 70) msg = "Bra jobbat. Lite mer fokus på svaga områden så är du i mål.";
-    else if (pct >= 50) msg = "OK start - men fortsätt öva, särskilt på modulerna där du fick fel.";
-    else msg = "Mer studier behövs. Repetera materialet och kör fler runor.";
+      msg = "Excellent result. You look well prepared for the exam.";
+    else if (pct >= 70) msg = "Good work. Focus on the weaker areas and you are close.";
+    else if (pct >= 50) msg = "Good start, but keep practicing the modules where you missed questions.";
+    else msg = "More study is needed. Review the material and run more practice rounds.";
     $("#result-message").textContent = msg;
 
     const reviewEl = $("#review-container");
@@ -363,15 +363,15 @@
       item.className = "review-item";
       item.innerHTML = `
         <div>
-          <span class="q-num">Fråga ${idx + 1}</span> ·
+          <span class="q-num">Question ${idx + 1}</span> ·
           <span class="verdict ${h.correct ? "right" : "wrong"}">${
-        h.correct ? "Rätt" : "Fel"
+        h.correct ? "Correct" : "Incorrect"
       }</span>
-          · Modul ${q.module}
+          · Module ${q.module}
         </div>
         <div><strong>${q.question}</strong></div>
-        <div>Ditt svar: ${userTxt}</div>
-        <div>Rätt svar: ${correctTxt}</div>
+        <div>Your answer: ${userTxt}</div>
+        <div>Correct answer: ${correctTxt}</div>
         <div class="small-explain">${q.explanation}</div>
       `;
       reviewEl.appendChild(item);
@@ -393,7 +393,7 @@
     checkBtn.addEventListener("click", checkAnswer);
     nextBtn.addEventListener("click", goNext);
     finishEarlyBtn.addEventListener("click", () => {
-      if (confirm("Vill du avsluta tidigt och se resultatet?")) showResults();
+      if (confirm("Finish early and show results?")) showResults();
     });
     $("#try-again-btn").addEventListener("click", () => {
       // restart with same config
@@ -416,7 +416,7 @@
       if (
         STATE.queue.length > 0 &&
         !STATE.finished &&
-        !confirm("Avbryt nuvarande quiz?")
+        !confirm("Abort the current quiz?")
       )
         return;
       quizSection.classList.add("hidden");

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,107 +13,107 @@
       <h1>HPE Morpheus Exam Prep</h1>
     </div>
     <div class="header-right">
-      <span id="score-display">Poäng: 0 / 0</span>
-      <button id="restart-btn" class="ghost">Nollställ</button>
+      <span id="score-display">Score: 0 / 0</span>
+      <button id="restart-btn" class="ghost">Reset</button>
     </div>
   </header>
 
   <main>
     <section id="setup" class="card">
-      <h2>Välj övningsläge</h2>
+      <h2>Select Practice Mode</h2>
       <div class="form-row">
-        <label>Moduler</label>
+        <label>Modules</label>
         <div id="module-checkboxes" class="checkbox-group"></div>
         <div class="quick-actions">
-          <button class="link" id="select-all">Markera alla</button>
-          <button class="link" id="select-none">Avmarkera alla</button>
+          <button class="link" id="select-all">Select all</button>
+          <button class="link" id="select-none">Clear all</button>
         </div>
       </div>
 
       <div class="form-row">
-        <label for="difficulty">Svårighetsgrad</label>
+        <label for="difficulty">Difficulty</label>
         <select id="difficulty">
-          <option value="all">Alla</option>
-          <option value="easy">Lätt</option>
-          <option value="medium">Medel</option>
-          <option value="hard">Svår</option>
+          <option value="all">All</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
         </select>
       </div>
 
       <div class="form-row">
-        <label for="num-questions">Antal frågor</label>
+        <label for="num-questions">Number of questions</label>
         <select id="num-questions">
           <option value="10">10</option>
           <option value="20" selected>20</option>
           <option value="40">40</option>
           <option value="60">60</option>
-          <option value="0">Alla (oändligt)</option>
+          <option value="0">All</option>
         </select>
       </div>
 
       <div class="form-row">
-        <label for="mode">Läge</label>
+        <label for="mode">Mode</label>
         <select id="mode">
-          <option value="practice">Övning (visa svar direkt)</option>
-          <option value="exam">Exam (svar visas på slutet)</option>
+          <option value="practice">Practice (show answers immediately)</option>
+          <option value="exam">Exam (show answers at the end)</option>
         </select>
       </div>
 
       <div class="form-row">
-        <label>Frågetyper</label>
+        <label>Question types</label>
         <div class="checkbox-group">
           <label><input type="checkbox" value="mc" checked /> Multiple choice</label>
-          <label><input type="checkbox" value="tf" checked /> Sant / Falskt</label>
-          <label><input type="checkbox" value="multi" checked /> Flera svar</label>
+          <label><input type="checkbox" value="tf" checked /> True / False</label>
+          <label><input type="checkbox" value="multi" checked /> Multiple answers</label>
         </div>
       </div>
 
-      <button id="start-btn" class="primary">Starta övning</button>
-      <p class="meta">Totalt frågor i bank: <span id="total-questions"></span></p>
+      <button id="start-btn" class="primary">Start practice</button>
+      <p class="meta">Total questions in bank: <span id="total-questions"></span></p>
     </section>
 
     <section id="quiz" class="card hidden">
       <div class="progress">
         <div class="progress-bar"><div id="progress-fill"></div></div>
-        <p id="progress-text">Fråga 1 av 20</p>
+        <p id="progress-text">Question 1 of 20</p>
       </div>
       <div id="question-container"></div>
       <div class="quiz-controls">
-        <button id="check-btn" class="primary">Kontrollera svar</button>
-        <button id="next-btn" class="primary hidden">Nästa</button>
-        <button id="finish-early-btn" class="ghost">Avsluta tidigt</button>
+        <button id="check-btn" class="primary">Check answer</button>
+        <button id="next-btn" class="primary hidden">Next</button>
+        <button id="finish-early-btn" class="ghost">Finish early</button>
       </div>
       <div id="explanation" class="explanation hidden"></div>
     </section>
 
     <section id="result" class="card hidden">
-      <h2>Resultat</h2>
+      <h2>Results</h2>
       <div class="result-summary">
         <div class="result-stat">
           <span class="big" id="result-score"></span>
-          <span class="small">Rätt</span>
+          <span class="small">Correct</span>
         </div>
         <div class="result-stat">
           <span class="big" id="result-percent"></span>
-          <span class="small">Procent</span>
+          <span class="small">Percent</span>
         </div>
         <div class="result-stat">
           <span class="big" id="result-total"></span>
-          <span class="small">Antal</span>
+          <span class="small">Count</span>
         </div>
       </div>
       <p id="result-message"></p>
-      <h3>Genomgång</h3>
+      <h3>Review</h3>
       <div id="review-container"></div>
       <div class="result-actions">
-        <button id="try-again-btn" class="primary">Kör om</button>
-        <button id="new-config-btn" class="ghost">Ny konfiguration</button>
+        <button id="try-again-btn" class="primary">Try again</button>
+        <button id="new-config-btn" class="ghost">New configuration</button>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Lokalt övningsverktyg för HPE Morpheus Enterprise Software Administration (H45ZD)</p>
+    <p>Practice tool for HPE Morpheus Enterprise Software Administration (H45ZD)</p>
   </footer>
 
   <script src="questions.js"></script>
