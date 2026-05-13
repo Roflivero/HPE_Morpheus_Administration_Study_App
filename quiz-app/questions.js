@@ -8,7 +8,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilka fem pelare används för att beskriva HPE Morpheus värde?",
+    "question": "En arkitekt ska sammanfatta Morpheus värde för ledningen. Vilken uppsättning beskriver plattformens fem pelare?",
     "options": [
       "Build, Consume, Govern, Automate, Optimize",
       "Plan, Deploy, Monitor, Report, Analyze",
@@ -25,7 +25,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad beskriver Build-pelaren i kursmaterialet?",
+    "question": "Ett team vill bygga en hybrid cloud-plattform med snabb provisioning och integration mot befintliga verktyg. Vilken pelare beskriver detta bäst?",
     "options": [
       "Hybrid cloud-miljöer, konsoliderad publik cloud-åtkomst och snabb provisionering",
       "Endast kostnadsrapporter och budgets",
@@ -42,7 +42,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilket problem adresserar Consume-pelaren?",
+    "question": "Användare vill beställa resurser själva från en gemensam portal över flera clouds. Vilken Morpheus-pelare adresserar detta?",
     "options": [
       "Att ge användare en single console och self-service provisioning över privata och publika clouds",
       "Att ersätta alla identity sources",
@@ -80,7 +80,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "tf",
     "difficulty": "easy",
-    "question": "HPE Morpheus skapades ursprungligen av Bertram Labs för eget bruk.",
+    "question": "Morpheus skapades ursprungligen av Bertram Labs för internt bruk innan Morpheus Data blev ett separat företag.",
     "options": [
       "Sant",
       "Falskt"
@@ -95,7 +95,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilket år började Bertram Labs bygga det verktyg som blev Morpheus?",
+    "question": "Du granskar Morpheus historik. Vilket år började Bertram Labs bygga den interna plattformen?",
     "options": [
       "2010",
       "2012",
@@ -112,7 +112,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilket år spun Morpheus Data ut från Bertram Labs?",
+    "question": "När blev Morpheus Data ett separat företag från Bertram Labs?",
     "options": [
       "2010",
       "2013",
@@ -129,7 +129,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken komponent i application tier ger remote console-funktionalitet?",
+    "question": "En administratör behöver remote console till en provisionerad VM. Vilken application tier-komponent används?",
     "options": [
       "Nginx",
       "Tomcat",
@@ -146,7 +146,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken komponent hanterar SSL termination och cache proxy för Tomcat?",
+    "question": "Du felsöker inkommande HTTPS-trafik till appliance. Vilken komponent sköter SSL termination och proxy/cache framför Tomcat?",
     "options": [
       "Nginx",
       "MySQL",
@@ -163,7 +163,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad används RabbitMQ till i Morpheus appliance-arkitekturen?",
+    "question": "I en HA-design behöver du förstå messaging tier. Vilken roll har RabbitMQ?",
     "options": [
       "Message queuing via AMQP",
       "Transactionell datalagring",
@@ -180,7 +180,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är Elasticsearch roll i arkitekturen?",
+    "question": "Du dimensionerar non-transactional tier. Vilken typ av data hanterar Elasticsearch i Morpheus?",
     "options": [
       "Log aggregation och temporal data som stats, metrics och logs",
       "Primär transaktionsdatabas",
@@ -197,7 +197,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Vilket minsta antal noder anges för clustered RabbitMQ-konfigurationer?",
+    "question": "Du designar RabbitMQ för HA. Vilket minsta antal noder anger kursen för clustered configuration?",
     "options": [
       "1",
       "2",
@@ -214,7 +214,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilken typ av operativsystem är Morpheus appliance baserad på?",
+    "question": "Du planerar installationen av Morpheus appliance. Vilken plattformstyp ska du förvänta dig?",
     "options": [
       "Linux-baserad software appliance",
       "Windows Server appliance",
@@ -231,7 +231,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilket kommando används för att tillämpa konfigurationsändringar efter installation?",
+    "question": "Efter att ha ändrat Morpheus-konfigurationen behöver du applicera ändringarna. Vilket kommando använder du?",
     "options": [
       "morpheus-ctl reconfigure",
       "morpheus apply",
@@ -248,7 +248,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var ligger Morpheus huvudkonfigurationsfil?",
+    "question": "Du ska ändra huvudkonfigurationen för appliance. Vilken fil ska du redigera?",
     "options": [
       "/etc/morpheus/morpheus.rb",
       "/var/log/morpheus/current",
@@ -265,7 +265,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var lagras känsliga secrets och lösenord?",
+    "question": "Du behöver hitta var appliance lagrar genererade secrets och lösenord. Vilken fil används?",
     "options": [
       "/etc/morpheus/morpheus-secrets.json",
       "/var/opt/morpheus/secrets.txt",
@@ -282,7 +282,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilket verktyg används för att starta, stoppa och visa status för Morpheus services?",
+    "question": "Du ska kontrollera status och starta om Morpheus services från CLI. Vilket verktyg använder du?",
     "options": [
       "morpheus-ctl",
       "system-config-morpheus",
@@ -320,7 +320,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var finns Morpheus service-loggar?",
+    "question": "Du felsöker en Morpheus-service och behöver dess loggar. Var letar du först?",
     "options": [
       "/var/log/morpheus/[SERVICE NAME]",
       "/etc/morpheus/logs",
@@ -337,7 +337,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Var justeras loggnivåer för morpheus-ui enligt kursen?",
+    "question": "Du behöver höja eller sänka loggnivån för morpheus-ui. Var görs detta enligt kursen?",
     "options": [
       "/opt/morpheus/conf/logback.xml",
       "/etc/morpheus/morpheus.rb",
@@ -354,7 +354,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var hittar man global proxykonfiguration i Morpheus UI?",
+    "question": "Appliance ska använda en global proxy för externa anslutningar. Var konfigureras den i UI?",
     "options": [
       "Administration > Settings > Appliance > Proxy Settings",
       "Provisioning > Instances > Proxy",
@@ -392,7 +392,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad är en Group i Morpheus?",
+    "question": "Du ska ge ett team åtkomst till rätt clouds och instances. Vad är en Group i Morpheus?",
     "options": [
       "En logisk container och RBAC-scope för clouds och instanser",
       "En billing currency",
@@ -409,7 +409,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är en Cloud i Morpheus?",
+    "question": "Du lägger till vCenter, AWS eller Azure i Morpheus. Vad representerar objektet Cloud?",
     "options": [
       "En integration till en cloud-leverantör eller hypervisor",
       "Enbart AWS-konto",
@@ -468,7 +468,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är syftet med Credentials i Morpheus?",
+    "question": "Du vill återanvända autentiseringsuppgifter mellan flera integrationsobjekt. Vad är syftet med Credentials?",
     "options": [
       "Centralt hanterade och återanvändbara autentiseringsuppgifter",
       "Att definiera service plan-storlekar",
@@ -506,7 +506,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad gör nightly sync vid 00:00 UTC enligt kursen?",
+    "question": "Du ser att nightly sync körs kl. 00:00 UTC. Vad används den främst till?",
     "options": [
       "Kör intensiva operationer som pricing och AWS guidance recommendations",
       "Raderar alla gamla instanser",
@@ -565,7 +565,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Discovered resources från inventory kan användas för att ge synlighet även om de inte skapats av Morpheus.",
+    "question": "Discovered resources från cloud inventory kan ge synlighet över resurser som inte skapades av Morpheus.",
     "options": [
       "Sant",
       "Falskt"
@@ -580,7 +580,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilka två huvudobjekt används för åtkomstkontroll i modulen Users and Roles?",
+    "question": "Du förklarar åtkomstmodellen för en ny administratör. Vilka objekt används främst för access control i modulen?",
     "options": [
       "Users och Roles",
       "Budgets och Prices",
@@ -597,7 +597,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad styr en User Role?",
+    "question": "En användare ska få vissa menyer och resurser men inte andra. Vad styr en User Role?",
     "options": [
       "Vad en användare får se och göra i Morpheus",
       "Vilken databas MySQL använder",
@@ -614,7 +614,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad betyder Default Access i rollbehörigheter?",
+    "question": "En permission är satt till Default i en roll. Vilken inställning avgör då den faktiska nivån?",
     "options": [
       "Nivån som används för permissions satta till Default",
       "Automatisk adminaccess",
@@ -631,7 +631,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken typ av integration används för Active Directory/LDAP-inloggning?",
+    "question": "Företaget vill använda Active Directory eller LDAP för inloggning. Vilken Morpheus-funktion används?",
     "options": [
       "Identity Source",
       "Price Set",
@@ -669,7 +669,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Roller kan användas för att begränsa åtkomst till Groups, Instance Types, Blueprints och Workflows.",
+    "question": "Roller kan begränsa åtkomst till bland annat Groups, Instance Types, Blueprints och Workflows.",
     "options": [
       "Sant",
       "Falskt"
@@ -684,7 +684,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Vad bör RBAC-strategin utgå från i Mega Corp-scenariot?",
+    "question": "Mega Corp vill designa RBAC efter team och miljöer. Vad bör strategin främst baseras på?",
     "options": [
       "Teamens ansvar och vilka miljöer de får använda",
       "Endast antal CPU-kärnor",
@@ -701,7 +701,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken permission krävs för att subtenant-admins ska kunna skapa roller i subtenanten?",
+    "question": "En subtenant-admin ska kunna skapa user roles. Vilken permission krävs?",
     "options": [
       "Admin: Roles",
       "Monitoring: Logs",
@@ -718,7 +718,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad är Inputs i Morpheus?",
+    "question": "Du behöver samla in extra värden i ett provisioning-formulär. Vad är Inputs i Morpheus?",
     "options": [
       "Custom formulärfält som kan samla in data vid provisioning eller workflow-körning",
       "Databasindex i MySQL",
@@ -756,7 +756,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är en Option List?",
+    "question": "Ett select-fält ska fyllas med kontrollerade val. Vad är en Option List?",
     "options": [
       "En källa till valbara alternativ för inputs",
       "En loggfil för morpheus-ui",
@@ -795,7 +795,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Inputs kan användas i Blueprints, Instance Types och Catalog Items.",
+    "question": "Inputs kan återanvändas i Blueprints, Instance Types och Catalog Items.",
     "options": [
       "Sant",
       "Falskt"
@@ -810,7 +810,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Varför är Option Lists viktiga i Mega Corp-labbarna?",
+    "question": "Du behöver dölja känslig inmatning i ett formulär. Vilken input-typ passar bäst?",
     "options": [
       "De standardiserar val som applikationsnamn eller supportnivå för policies och provisioning",
       "De ersätter RabbitMQ",
@@ -827,7 +827,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken input-typ passar bäst för att dölja känsligt användarinmatat värde?",
+    "question": "Ett formulär ska hämta val från ett externt system vid körning. Vad är fördelen med en REST-baserad Option List?",
     "options": [
       "Password",
       "Text",
@@ -844,7 +844,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är en praktisk fördel med REST-baserade Option Lists?",
+    "question": "En kund vill begränsa vem som får provisionera vad, hur länge resurser lever och hur de namnges. Vad används Policies till?",
     "options": [
       "Alternativ kan hämtas dynamiskt från externa system",
       "De stänger av alla policies",
@@ -861,7 +861,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad används Policies till i Morpheus?",
+    "question": "Ett provisioningflöde ska kräva godkännande innan resurser skapas. Vilken policytyp används?",
     "options": [
       "Att styra och begränsa beteenden som provisioning, naming, expiry och resursanvändning",
       "Att rendera UI-teman",
@@ -900,7 +900,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken policy används för att kräva godkännande innan provisioning?",
+    "question": "En instance matchar både en global policy och en group-policy. Vilken policy gäller?",
     "options": [
       "Provision Approval Policy",
       "Budget Cost Analysis",
@@ -917,7 +917,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Vilken scope-prioritet gäller om en global och en group-policy båda matchar?",
+    "question": "Du prioriterar flera policies som matchar samma request. Vilken ordning anger kursmaterialet?",
     "options": [
       "Group-policyn vinner över Global",
       "Global vinner alltid",
@@ -951,7 +951,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Hard limits stoppar åtgärden medan soft limits kan varna men tillåta fortsatt process.",
+    "question": "Hard limits stoppar åtgärden, medan soft limits kan användas för varning eller mjukare kontroll.",
     "options": [
       "Sant",
       "Falskt"
@@ -966,7 +966,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken policytyp passar Mega Corps krav att system ska löpa ut efter 20 dagar?",
+    "question": "Operations-teamet måste ange cost center på alla instanser. Vilken policytyp stödjer kravet?",
     "options": [
       "Expire Date Policy",
       "Monitoring Check Policy",
@@ -983,7 +983,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken policy hjälper Mega Corp att kräva kostnadscenter-taggar?",
+    "question": "Mega Corp vill standardisera instansnamn mellan grupper. Vilken policytyp används?",
     "options": [
       "Tag Compliance Policy",
       "Virtual Image Policy",
@@ -1017,7 +1017,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Policies kan riktas mot exempelvis users, roles, groups, clouds eller globalt.",
+    "question": "Policies kan riktas mot flera scopes, exempelvis users, roles, groups, clouds eller globalt.",
     "options": [
       "Sant",
       "Falskt"
@@ -1032,7 +1032,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad representerar en Instance i Morpheus provisioningkoncept?",
+    "question": "Du konfigurerar en instance type för olika clouds eller versioner. Vad definierar en Layout?",
     "options": [
       "En resurs eller tjänst som provisioneras och hanteras",
       "Endast en DNS-zon",
@@ -1049,7 +1049,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad definierar en Layout?",
+    "question": "Du bygger en layout med en VM eller container. Vad representerar en Node Type?",
     "options": [
       "Teknologin och konfigurationen för hur en instance type provisioneras",
       "Användarens lösenord",
@@ -1066,7 +1066,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad representerar en Node Type?",
+    "question": "Du ska välja basimage för provisioning. Vad representerar Virtual Images?",
     "options": [
       "En VM eller container i layouten",
       "En tenant role",
@@ -1143,7 +1143,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Varför använder Mega Corp en instance type med två layouts för Ubuntu 24.04?",
+    "question": "Development och Production behöver samma Ubuntu-grund men olika access/naming. Varför passar en instance type med två layouts?",
     "options": [
       "För att Development och Production har olika group access/naming-behov men samma grundtyp",
       "För att RabbitMQ kräver två queues",
@@ -1181,7 +1181,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Hur kommunicerar Morpheus agent normalt med appliance?",
+    "question": "Du designar agentkommunikation genom brandvägg. Hur ansluter Morpheus agent normalt till appliance?",
     "options": [
       "Outbound HTTPS/WSS på port 443",
       "Inbound SSH från appliance på port 22",
@@ -1219,7 +1219,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "tf",
     "difficulty": "medium",
-    "question": "En discovered VM kan konverteras till managed instance utan extra WLE utöver discovered-serverns WLE.",
+    "question": "En discovered VM kan konverteras till managed instance utan extra WLE utöver den WLE som redan används för discovered-servern.",
     "options": [
       "Sant",
       "Falskt"
@@ -1234,7 +1234,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad innebär Delete instance-alternativet “Remove from HPE Morpheus but keep in target cloud”?",
+    "question": "Du vill konvertera en discovered VM till managed instance. Vad gäller för WLE enligt kursen?",
     "options": [
       "Att unmanage:a objektet i Morpheus utan att radera VM i target cloud",
       "Att radera både Morpheus och target cloud",
@@ -1251,7 +1251,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad ger Tenants i Morpheus?",
+    "question": "Du vill sluta hantera en VM i Morpheus men behålla den i target cloud. Vilket delete-beteende motsvarar detta?",
     "options": [
       "Isolerade miljöer i en single appliance",
       "Endast monitoring checks",
@@ -1268,7 +1268,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "tf",
     "difficulty": "easy",
-    "question": "Endast en master tenant kan existera.",
+    "question": "Det kan bara finnas en master tenant i en Morpheus appliance.",
     "options": [
       "Sant",
       "Falskt"
@@ -1300,7 +1300,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vem kan skapa och kontrollera subtenants?",
+    "question": "Du designar subtenant-hierarkin. Hur många nivåer subtenancy stöds?",
     "options": [
       "Master tenant",
       "Vilken subtenant som helst",
@@ -1317,7 +1317,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad sätter en tenant role för en subtenant?",
+    "question": "Vem skapar och kontrollerar subtenants i Morpheus?",
     "options": [
       "Maximala permissions som subtenant users kan använda",
       "Endast valuta",
@@ -1334,7 +1334,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Om en permission är disabled i tenant role syns den inte som valbar i user role.",
+    "question": "Om en permission är disabled i tenant role blir den inte synlig som valbar permission i user role.",
     "options": [
       "Sant",
       "Falskt"
@@ -1366,7 +1366,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är skillnaden mellan single tenant user roles och multi-tenant user roles?",
+    "question": "Du jämför single tenant och multi-tenant user roles. Vilken beskrivning är korrekt?",
     "options": [
       "Single tenant roles skapas/lever i en subtenant; multi-tenant roles skapas i root och kopieras till subtenants",
       "De är identiska i alla avseenden",
@@ -1447,7 +1447,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "När bör Git integration användas i stället för GitHub integration?",
+    "question": "Du integrerar automation-kod från ett enskilt repo. När bör Git integration väljas framför GitHub integration?",
     "options": [
       "När du vill integrera ett enskilt repo, oavsett GitHub/ADO/GitLab",
       "När du vill importera alla GitHub-repon i kontot",
@@ -1464,7 +1464,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad kräver privata Git-repon enligt kursen?",
+    "question": "Ett privat Git-repo ska användas i Morpheus automation. Vad krävs?",
     "options": [
       "Autentisering via PAT och SSH keys",
       "Endast en tenant role",
@@ -1481,7 +1481,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilket format accepterar Morpheus för SSH keys i Git-sammanhang?",
+    "question": "Du importerar SSH keys för Git-integration. Vilket format accepterar Morpheus enligt kursen?",
     "options": [
       "PEM format",
       "PFX only",
@@ -1498,7 +1498,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad är Cypher?",
+    "question": "Du behöver lagra hemligheter för automation. Vad är Cypher?",
     "options": [
       "En säker krypterad key/value store",
       "En monitoring dashboard",
@@ -1515,7 +1515,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken syntax används för att läsa Cypher-värden i automation enligt kursen?",
+    "question": "En script task behöver läsa ett hemligt värde från Cypher. Vilken syntax visar kursen?",
     "options": [
       "<%= cypher.read(\"varname\") %>",
       "${env:cypher.varname}",
@@ -1553,7 +1553,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Tasks kan köras från kod i ett Git-repo eller från kod direkt i tasken.",
+    "question": "En Task kan köra kod från ett Git-repo eller från kod som lagts direkt i tasken.",
     "options": [
       "Sant",
       "Falskt"
@@ -1568,7 +1568,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken workflowtyp kan köras on demand via Actions, schemaläggas via jobs eller göras till catalog item?",
+    "question": "Du vill köra ett workflow manuellt, schemalagt eller via service catalog. Vilken workflowtyp använder du?",
     "options": [
       "Operational Workflow",
       "Provisioning Workflow",
@@ -1585,7 +1585,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken workflowtyp associeras med instances vid provisioning?",
+    "question": "Du vill koppla automation till instance provisioning. Vilken workflowtyp används?",
     "options": [
       "Provisioning Workflow",
       "Operational Workflow",
@@ -1624,7 +1624,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad gör File Templates?",
+    "question": "Du behöver generera konfigurationsfiler med variabler under automation. Vad gör File Templates?",
     "options": [
       "Genererar konfigurationsfiler med variabelstöd för automation",
       "Skapar invoices",
@@ -1641,7 +1641,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Var kan inputs sättas i automation building blocks enligt kursen?",
+    "question": "Du placerar inputs på instance type och layout. När visas de för användaren?",
     "options": [
       "På instance types och layouts; operational workflows kan också ha inputs",
       "Endast på tenants",
@@ -1658,7 +1658,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad gör Mega Corp-labben först i Automation-modulen?",
+    "question": "I Mega Corp automation-labben ska Morpheus använda kod från repo. Vad görs först?",
     "options": [
       "Lägger till Git repo integration så tasks kan använda kod",
       "Skapar invoices",
@@ -1675,7 +1675,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad används app blueprints till?",
+    "question": "Du ska provisionera en multi-tier application. Vad används app blueprints till?",
     "options": [
       "Att provisionera komplexa applikationer baserade på Morpheus instances eller IaC",
       "Att enbart visa logs",
@@ -1714,7 +1714,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var kan appar från blueprints provisioneras?",
+    "question": "En användare ska provisionera en app från en blueprint. Var kan detta göras?",
     "options": [
       "Provisioning > Apps eller via self-service catalog",
       "Administration > Health only",
@@ -1731,7 +1731,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad kännetecknar HPE Morpheus type blueprint?",
+    "question": "Du vill bygga en multi-tier app med vanliga Morpheus instance types. Vilken blueprinttyp passar?",
     "options": [
       "Multi-tiered application provisioning från Morpheus instance types",
       "Endast Terraform-kod",
@@ -1748,7 +1748,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad kan boot order användas till i en Morpheus blueprint?",
+    "question": "En databas-tier måste byggas före application-tier. Vad används boot order till?",
     "options": [
       "Att styra byggsekvensen mellan tiers, t.ex. database före application",
       "Att välja currency provider",
@@ -1786,7 +1786,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad består Mega Corps Rocket Parts blueprint av?",
+    "question": "Mega Corp ska provisionera Rocket Parts som blueprint. Vilken arkitektur används?",
     "options": [
       "Två tiers: Custom MySQL database och Apache/PHP application",
       "Enbart en DNS-record",
@@ -1803,7 +1803,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Blueprints kan ha flera konfigurationer, exempelvis production och development.",
+    "question": "En Morpheus blueprint kan ha flera konfigurationer, exempelvis en för production och en för development.",
     "options": [
       "Sant",
       "Falskt"
@@ -1818,7 +1818,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Varför skapas en development configuration i Mega Corp blueprint?",
+    "question": "Varför lägger Mega Corp till en development configuration i blueprinten?",
     "options": [
       "För production-liknande testmiljö med mindre instanser och development group-scope",
       "För att ersätta all monitoring",
@@ -1835,7 +1835,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Vilken inställning kan avgöra om blueprint-fält syns och kan ändras vid provisioning?",
+    "question": "Du vill styra om blueprint-fält kan ändras av användaren vid provisioning. Vilken inställning används?",
     "options": [
       "Fält kan lämnas open/unlocked, locked eller hidden",
       "Endast appliance currency",
@@ -1874,7 +1874,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad händer när en monitoring check fails?",
+    "question": "En monitoring check går ned. Vad gör Morpheus automatiskt?",
     "options": [
       "Morpheus raises an incident",
       "Morpheus skapar alltid en tenant",
@@ -1913,7 +1913,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är en Check?",
+    "question": "Du skapar en monitoring check. Vad är en Check?",
     "options": [
       "En individuell monitoring check",
       "En price set",
@@ -1930,7 +1930,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är en Monitoring Group?",
+    "question": "Du grupperar flera checks för en tjänst. Vad är en Monitoring Group?",
     "options": [
       "En container för en eller flera checks",
       "En tenant role",
@@ -1969,7 +1969,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Hur går en check från Warning tillbaka till Healthy efter resolution?",
+    "question": "En check har återhämtat sig från fel. När går den från Warning tillbaka till Healthy?",
     "options": [
       "Efter 10 successful check runs",
       "Efter exakt 1 minut alltid",
@@ -1986,7 +1986,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken inställning skapar VM Monitoring checks automatiskt för provisionerade instanser?",
+    "question": "Du vill att varje ny provisionerad instance ska få en VM Monitoring check. Vilken inställning aktiveras?",
     "options": [
       "Auto Create checks",
       "Enable Chargeback",
@@ -2003,7 +2003,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken komponent vidarebefordrar logs vid syslog forwarding enligt kursen?",
+    "question": "Du aktiverar syslog forwarding för managed VMs. Vilken komponent skickar loggarna?",
     "options": [
       "Morpheus agent, inte appliance",
       "RabbitMQ direkt",
@@ -2020,7 +2020,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var konfigureras alert rules?",
+    "question": "Du ska konfigurera vem som larmas vid kritiska fel. Var skapas alert rules?",
     "options": [
       "Monitoring > Alert Rules",
       "Administration > Plans & Pricing",
@@ -2059,7 +2059,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "tf",
     "difficulty": "medium",
-    "question": "App monitors visar aggregering av checks/groups för en specifik app.",
+    "question": "App monitors visar en aggregering av checks och groups för en specifik app.",
     "options": [
       "Sant",
       "Falskt"
@@ -2074,7 +2074,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vad är syftet med Self-Service-modulen?",
+    "question": "Du vill ge användare en förenklad portal för beställningar. Vad är syftet med Self-Service-modulen?",
     "options": [
       "Att skapa catalog items som användare kan provisionera via Service Catalog persona",
       "Att konfigurera RabbitMQ cluster",
@@ -2091,7 +2091,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var skapas catalog items?",
+    "question": "Du ska skapa ett nytt catalog item. Var görs det i UI?",
     "options": [
       "Library > Blueprints > Catalog Items",
       "Operations > Costing > Usage",
@@ -2108,7 +2108,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken rollbehörighet krävs för att skapa eller ändra catalog items?",
+    "question": "En administratör ska skapa eller ändra catalog items. Vilken rollbehörighet krävs?",
     "options": [
       "Library: Catalog Items = Full",
       "Monitoring: Logs = Read",
@@ -2140,7 +2140,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Hur kan supplemental content läggas till i catalog items?",
+    "question": "Du vill lägga till extra instruktioner eller beskrivning i ett catalog item. Var läggs supplemental content?",
     "options": [
       "I CONTENT-fältet",
       "Endast i RabbitMQ",
@@ -2157,7 +2157,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad förenklar Forms i version 6.1 och senare?",
+    "question": "Du använder Morpheus 6.1 eller senare. Vad förenklar Forms för catalog items?",
     "options": [
       "Hur inputs läggs till i catalog items",
       "Hur RabbitMQ elections fungerar",
@@ -2174,7 +2174,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "mc",
     "difficulty": "easy",
-    "question": "Vilken persona använder self-service users?",
+    "question": "En användare ska beställa resurser via self-service. Vilken persona används?",
     "options": [
       "Service Catalog Persona",
       "Virtual Desktop only",
@@ -2213,7 +2213,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "tf",
     "difficulty": "medium",
-    "question": "Service catalog-vyn finns också tillgänglig från standard persona.",
+    "question": "Service catalog-vyn är också tillgänglig från standard persona.",
     "options": [
       "Sant",
       "Falskt"
@@ -2288,7 +2288,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad kontrollerar Service Plans?",
+    "question": "Du visar en administratör var pricing konfigureras. Var finns Plans & Pricing?",
     "options": [
       "Compute-mängd vid provisioning och reconfigure",
       "Alert severity",
@@ -2337,7 +2337,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad gör Prices?",
+    "question": "Du ser public cloud plans efter att AWS/Azure lagts till. Vad gäller för dessa plans?",
     "options": [
       "Definierar vad som prissätts, belopp, price unit, cost/markup/price och kan läggas i price sets",
       "Skapar VM checks",
@@ -2354,7 +2354,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad gör Price Sets?",
+    "question": "Ett public cloud plan ska inte längre användas. Vad rekommenderar kursen?",
     "options": [
       "Kombinerar en eller flera prices och kopplas till plans, instance types eller layouts",
       "Skapar identity sources",
@@ -2371,7 +2371,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad är Usage Records?",
+    "question": "Du sätter pris på compute, memory eller storage. Vad gör Prices?",
     "options": [
       "Lägsta nivåns itinerary item för att tracka kostnader mot resurser",
       "En rolltyp",
@@ -2388,7 +2388,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Vad händer när en resurs ändras i metered pricing?",
+    "question": "Du vill koppla flera priser till en plan. Vad gör Price Sets?",
     "options": [
       "Nya usage records skapas",
       "Alla invoices raderas",
@@ -2425,7 +2425,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Var konfigureras currency settings?",
+    "question": "Du granskar metered pricing för en resource. Vad är Usage Records?",
     "options": [
       "Administration > Settings > Appliance > Currency Settings",
       "Monitoring > Logs",
@@ -2463,7 +2463,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vad gör cloud costing setting på public cloud när den är enabled?",
+    "question": "En resource ändras efter provisioning. Vad händer med usage records?",
     "options": [
       "Live-syncar cost data från cloud provider och skapar invoice records",
       "Skapar tenant roles",
@@ -2497,7 +2497,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Vilken granularity har invoice records?",
+    "question": "Du ska konfigurera currency conversion. Var görs det?",
     "options": [
       "Månadsgranularitet och beräknas nightly",
       "Sekundgranularitet i realtid",
@@ -2514,7 +2514,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Hur hanteras invoice line items från usage records kortare än en timme?",
+    "question": "Public cloud costing är enabled. Vad gör cloud costing setting?",
     "options": [
       "Kostnaden rundas upp till en timmes kostnad",
       "De ignoreras helt",
@@ -2531,7 +2531,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "hard",
-    "question": "När används actual cost type?",
+    "question": "Du vill se usage records i UI. Var hittar du dem?",
     "options": [
       "När costing är enabled på cloud",
       "När costing inte är enabled",
@@ -2548,7 +2548,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "hard",
-    "question": "Vad rekommenderar HPE för metered pricing cost data?",
+    "question": "Du förklarar invoice records. Vilken granularity har de?",
     "options": [
       "Hämta cost data från usage records via Billing API",
       "Använd bara invoice UI",
@@ -2565,7 +2565,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Hur många predefined report types nämns?",
+    "question": "En usage record varar kortare än en timme och blir invoice line item. Hur hanteras kostnaden?",
     "options": [
       "31",
       "14",
@@ -2582,7 +2582,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Hur många predefined analytics dashboards nämns?",
+    "question": "Du ser actual cost type på en invoice. När används actual cost type?",
     "options": [
       "14",
       "31",
@@ -2642,7 +2642,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "mc",
     "difficulty": "medium",
-    "question": "Hur lång kan en budgetperiod vara enligt kursen?",
+    "question": "Du skapar en budget i Morpheus. Hur lång budgetperiod stöds?",
     "options": [
       "Single eller multi-year, upp till tre år",
       "Endast en månad",
