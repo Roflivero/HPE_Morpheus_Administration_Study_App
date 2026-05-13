@@ -1,0 +1,7 @@
+.DS_Store
+.claude/
+*.pdf
+
+# Local source/extraction notes. The public app does not need raw course material.
+content/
+screenshots/

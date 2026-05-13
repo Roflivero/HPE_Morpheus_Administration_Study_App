@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPE Morpheus Exam Prep</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="bar"></span>
+      <h1>HPE Morpheus Exam Prep</h1>
+    </div>
+    <div class="header-right">
+      <span id="score-display">Poäng: 0 / 0</span>
+      <button id="restart-btn" class="ghost">Nollställ</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="setup" class="card">
+      <h2>Välj övningsläge</h2>
+      <div class="form-row">
+        <label>Moduler</label>
+        <div id="module-checkboxes" class="checkbox-group"></div>
+        <div class="quick-actions">
+          <button class="link" id="select-all">Markera alla</button>
+          <button class="link" id="select-none">Avmarkera alla</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="difficulty">Svårighetsgrad</label>
+        <select id="difficulty">
+          <option value="all">Alla</option>
+          <option value="easy">Lätt</option>
+          <option value="medium">Medel</option>
+          <option value="hard">Svår</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="num-questions">Antal frågor</label>
+        <select id="num-questions">
+          <option value="10">10</option>
+          <option value="20" selected>20</option>
+          <option value="40">40</option>
+          <option value="60">60</option>
+          <option value="0">Alla (oändligt)</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="mode">Läge</label>
+        <select id="mode">
+          <option value="practice">Övning (visa svar direkt)</option>
+          <option value="exam">Exam (svar visas på slutet)</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Frågetyper</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="mc" checked /> Multiple choice</label>
+          <label><input type="checkbox" value="tf" checked /> Sant / Falskt</label>
+          <label><input type="checkbox" value="multi" checked /> Flera svar</label>
+        </div>
+      </div>
+
+      <button id="start-btn" class="primary">Starta övning</button>
+      <p class="meta">Totalt frågor i bank: <span id="total-questions"></span></p>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div class="progress">
+        <div class="progress-bar"><div id="progress-fill"></div></div>
+        <p id="progress-text">Fråga 1 av 20</p>
+      </div>
+      <div id="question-container"></div>
+      <div class="quiz-controls">
+        <button id="check-btn" class="primary">Kontrollera svar</button>
+        <button id="next-btn" class="primary hidden">Nästa</button>
+        <button id="finish-early-btn" class="ghost">Avsluta tidigt</button>
+      </div>
+      <div id="explanation" class="explanation hidden"></div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Resultat</h2>
+      <div class="result-summary">
+        <div class="result-stat">
+          <span class="big" id="result-score"></span>
+          <span class="small">Rätt</span>
+        </div>
+        <div class="result-stat">
+          <span class="big" id="result-percent"></span>
+          <span class="small">Procent</span>
+        </div>
+        <div class="result-stat">
+          <span class="big" id="result-total"></span>
+          <span class="small">Antal</span>
+        </div>
+      </div>
+      <p id="result-message"></p>
+      <h3>Genomgång</h3>
+      <div id="review-container"></div>
+      <div class="result-actions">
+        <button id="try-again-btn" class="primary">Kör om</button>
+        <button id="new-config-btn" class="ghost">Ny konfiguration</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lokalt övningsverktyg för HPE Morpheus Enterprise Software Administration (H45ZD)</p>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
