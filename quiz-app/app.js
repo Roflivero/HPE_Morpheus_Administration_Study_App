@@ -173,12 +173,18 @@
         .join("");
     }
 
+    const answerHint =
+      q.type === "multi"
+        ? `<p class="question-hint">Välj exakt ${q.answer.length} alternativ.</p>`
+        : "";
+
     questionContainer.innerHTML = `
       <div>
         <span class="module-tag">Modul ${q.module} – ${q.moduleName}</span>
-        <span class="difficulty-tag">${labelDifficulty(q.difficulty)} · ${labelType(q.type)}</span>
+        <span class="difficulty-tag">${labelDifficulty(q.difficulty)} · ${labelType(q)}</span>
       </div>
-      <p class="question">${q.question}</p>
+      <p class="question">${formatQuestion(q)}</p>
+      ${answerHint}
       <div class="options">${optionsHtml}</div>
     `;
 
@@ -207,10 +213,17 @@
     return "Svår";
   }
 
-  function labelType(t) {
-    if (t === "mc") return "Multiple choice";
-    if (t === "multi") return "Flera svar";
+  function labelType(q) {
+    if (q.type === "mc") return "Multiple choice";
+    if (q.type === "multi") return `Flera svar · välj ${q.answer.length}`;
     return "Sant/Falskt";
+  }
+
+  function formatQuestion(q) {
+    if (q.type !== "multi") return q.question;
+    return q.question
+      .replace(/\s*\(Välj alla som stämmer\)\.?$/i, "")
+      .replace(/\s*\(Välj \d+\.\)\.?$/i, "");
   }
 
   // ---------- Check answer ----------
@@ -224,6 +237,11 @@
       );
       if (userAnswer.length === 0) {
         alert("Välj minst ett alternativ.");
+        return;
+      }
+      const expectedCount = Array.isArray(q.answer) ? q.answer.length : 1;
+      if (userAnswer.length !== expectedCount) {
+        alert(`Välj exakt ${expectedCount} alternativ.`);
         return;
       }
     } else {

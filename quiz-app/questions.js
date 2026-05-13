@@ -1,4 +1,4 @@
-// HPE Morpheus Exam Question Bank - rewritten from MorpheusKursmaterial.pdf OCR
+// HPE Morpheus Exam Question Bank - exam-style study questions from MorpheusKursmaterial.pdf OCR
 // Source: HPE Morpheus Enterprise Software Administration Student Guide H45ZD-SG-A01-E
 // Total questions: 149
 const QUESTIONS = [
@@ -59,7 +59,7 @@ const QUESTIONS = [
     "moduleName": "HPE Morpheus Introduction",
     "type": "multi",
     "difficulty": "hard",
-    "question": "Vilka funktioner hör till Govern-pelaren? (Välj alla som stämmer)",
+    "question": "En organisation vill använda Morpheus för att styra åtkomst, isolera miljöer och införa kontroller. Vilka funktioner hör till Govern-pelaren?",
     "options": [
       "Fine-grained RBAC via grupper",
       "Multi-tenancy för isolerade miljöer",
@@ -299,7 +299,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka services ingår i en all-in-one Morpheus appliance? (Välj alla som stämmer)",
+    "question": "Du verifierar vilka tjänster som finns i en all-in-one Morpheus appliance. Vilka tjänster ingår?",
     "options": [
       "morpheus-ui",
       "mysql",
@@ -371,7 +371,7 @@ const QUESTIONS = [
     "moduleName": "Installing, Maintaining, and Configuring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka personas nämns i kursmaterialet? (Välj alla som stämmer)",
+    "question": "En användare ska få rätt UI-vy i Morpheus. Vilka personas finns i plattformen?",
     "options": [
       "Standard",
       "Service Catalog",
@@ -426,7 +426,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka är exempel på private cloud-typer som kursen tar upp? (Välj alla som stämmer)",
+    "question": "Du ska lägga till en private cloud-integration i Morpheus. Vilka alternativ är exempel på private cloud-typer?",
     "options": [
       "VMware vCenter",
       "Nutanix",
@@ -447,7 +447,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka är exempel på public cloud-typer i Morpheus? (Välj alla som stämmer)",
+    "question": "Du ska lägga till en public cloud-integration i Morpheus. Vilka alternativ är public cloud-typer?",
     "options": [
       "AWS",
       "Azure",
@@ -485,7 +485,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "hard",
-    "question": "Vilka credential-typer stöds enligt kursmaterialet? (Välj alla som stämmer)",
+    "question": "Du skapar credentials för cloud- och integrationsåtkomst. Vilka credential-typer stöds?",
     "options": [
       "Username And Password",
       "Access Key and Secret Key",
@@ -523,7 +523,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka DNS-integrationer nämns? (Välj alla som stämmer)",
+    "question": "Du vill att Morpheus ska skapa DNS-poster automatiskt vid provisioning. Vilka DNS-integrationer kan användas?",
     "options": [
       "AWS Route 53",
       "Microsoft DNS",
@@ -544,7 +544,7 @@ const QUESTIONS = [
     "moduleName": "Groups and Clouds",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka IPAM-integrationer nämns? (Välj alla som stämmer)",
+    "question": "Du vill att Morpheus ska allokera IP-adresser automatiskt. Vilka IPAM-integrationer kan användas?",
     "options": [
       "phpIPAM",
       "BlueCat",
@@ -648,7 +648,7 @@ const QUESTIONS = [
     "moduleName": "Users and Roles",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka identity source-typer nämns i kursen? (Välj alla som stämmer)",
+    "question": "Du ska integrera extern autentisering för användare. Vilka identity source-typer stöds?",
     "options": [
       "LDAP/Active Directory",
       "SAML 2.0",
@@ -735,7 +735,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka är exempel på input-typer? (Välj alla som stämmer)",
+    "question": "Du bygger ett provisioning-formulär med custom inputs. Vilka input-typer är giltiga exempel?",
     "options": [
       "Text",
       "Number",
@@ -773,7 +773,7 @@ const QUESTIONS = [
     "moduleName": "Inputs and Option Lists",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka källor kan Option Lists använda? (Välj alla som stämmer)",
+    "question": "Du vill fylla ett select-fält dynamiskt med värden. Vilka källor kan en Option List använda?",
     "options": [
       "Manual",
       "REST",
@@ -878,7 +878,7 @@ const QUESTIONS = [
     "moduleName": "Policies",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka är exempel på policy-typer? (Välj alla som stämmer)",
+    "question": "Du ska begränsa och styra provisioning med policies. Vilka är exempel på policy-typer?",
     "options": [
       "Backup",
       "Expire Date",
@@ -1100,7 +1100,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka virtual image-typer nämns? (Välj alla som stämmer)",
+    "question": "Du konfigurerar images för provisioning. Vilka virtual image-typer förekommer i Morpheus?",
     "options": [
       "System virtual images",
       "Synced user virtual images",
@@ -1121,7 +1121,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka steg ingår i ett typiskt provisioningflöde för VMware? (Välj alla som stämmer)",
+    "question": "Du felsöker ett typiskt VMware-provisioningflöde. Vilka steg ingår i flödet?",
     "options": [
       "Kontrollera att virtual image finns i target cloud",
       "Clone image till target datastore",
@@ -1160,7 +1160,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka fördelar ger Morpheus agent? (Välj alla som stämmer)",
+    "question": "Du överväger att installera Morpheus agent på provisionerade VM:ar. Vilka funktioner får du med agenten?",
     "options": [
       "Guest OS-statistik",
       "System/application logs i appliance",
@@ -1198,7 +1198,7 @@ const QUESTIONS = [
     "moduleName": "Provisioning Instances",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka inventory settings finns för cloud inventory? (Välj alla som stämmer)",
+    "question": "Du aktiverar inventory på en cloud integration. Vilka inventory-nivåer kan väljas?",
     "options": [
       "Off",
       "Basic",
@@ -1383,7 +1383,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka whitelabel-inställningar nämns? (Välj alla som stämmer)",
+    "question": "En subtenant ska få egen branding. Vilka inställningar kan whitelabel-funktionen ändra?",
     "options": [
       "Appliance name",
       "Header logo",
@@ -1404,7 +1404,7 @@ const QUESTIONS = [
     "moduleName": "Tenancy",
     "type": "multi",
     "difficulty": "hard",
-    "question": "Vilka sätt kan ge subtenants cloud resources? (Välj alla som stämmer)",
+    "question": "En subtenant behöver tillgång till cloud resources. Vilka metoder stöds?",
     "options": [
       "Integrera cloud direkt i subtenanten",
       "Share cloud integration från master tenant till subtenants",
@@ -1425,7 +1425,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "multi",
     "difficulty": "easy",
-    "question": "Vilka automation building blocks nämns i modulen? (Välj alla som stämmer)",
+    "question": "Du designar automation i Morpheus. Vilka byggblock ingår i automation-modulen?",
     "options": [
       "Code repositories",
       "Cypher",
@@ -1532,7 +1532,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka target options finns för Tasks? (Välj alla som stämmer)",
+    "question": "Du skapar en Task och ska välja var den körs. Vilka target options finns?",
     "options": [
       "Resource",
       "Local",
@@ -1602,7 +1602,7 @@ const QUESTIONS = [
     "moduleName": "Automation",
     "type": "multi",
     "difficulty": "hard",
-    "question": "Vilka faser nämns för script templates? (Välj alla som stämmer)",
+    "question": "Du kopplar script templates till provisioning-livscykeln. Vilka faser kan användas?",
     "options": [
       "Pre-provision",
       "Provision",
@@ -1692,7 +1692,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka IaC blueprint-typer stöds? (Välj alla som stämmer)",
+    "question": "Du ska skapa en IaC-baserad blueprint. Vilka tekniker stöds av Morpheus blueprints?",
     "options": [
       "Terraform",
       "ARM",
@@ -1765,7 +1765,7 @@ const QUESTIONS = [
     "moduleName": "Blueprints",
     "type": "multi",
     "difficulty": "hard",
-    "question": "Hur kan IaC-kod läggas till i en IaC blueprint? (Välj alla som stämmer)",
+    "question": "Du skapar en IaC blueprint och behöver ange källan till koden. Vilka källor stöds?",
     "options": [
       "Från integrerat Git-repo",
       "Via Morpheus spec template",
@@ -1852,7 +1852,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "multi",
     "difficulty": "easy",
-    "question": "Vilka huvuddelar ingår i Morpheus monitoring enligt modulen? (Välj alla som stämmer)",
+    "question": "Du bygger monitoring för en applikation i Morpheus. Vilka huvuddelar ingår?",
     "options": [
       "Checks",
       "Monitoring groups",
@@ -1891,7 +1891,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka notifieringsvägar kan alert rules använda? (Välj alla som stämmer)",
+    "question": "Du konfigurerar alert rules för driftlarm. Vilka kontakt-/notifieringstyper kan användas?",
     "options": [
       "Email/SMS",
       "Web hook",
@@ -1947,7 +1947,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka check states anges? (Välj alla som stämmer)",
+    "question": "Du granskar status för monitoring checks. Vilka check states kan visas?",
     "options": [
       "Healthy",
       "Error",
@@ -2037,7 +2037,7 @@ const QUESTIONS = [
     "moduleName": "Monitoring",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka checks bygger Mega Corp monitoring-labben för Rocket app? (Välj alla som stämmer)",
+    "question": "Du sätter upp monitoring för Mega Corps Rocket app. Vilka checks ingår i labbscenariot?",
     "options": [
       "VM",
       "MySQL",
@@ -2191,7 +2191,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka tabs finns i Service Catalog persona? (Välj alla som stämmer)",
+    "question": "En self-service-användare öppnar Service Catalog-personan. Vilka tabs finns där?",
     "options": [
       "Dashboard",
       "Catalog",
@@ -2228,7 +2228,7 @@ const QUESTIONS = [
     "moduleName": "Self-Service",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka catalog items bygger Mega Corp self-service-labben? (Välj alla som stämmer)",
+    "question": "Du bygger self-service för Mega Corp. Vilka catalog items ingår i scenariot?",
     "options": [
       "Custom Ubuntu",
       "Rocket app blueprint",
@@ -2249,7 +2249,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "multi",
     "difficulty": "easy",
-    "question": "Vilka centrala objekt används för plans/pricing i Morpheus? (Välj alla som stämmer)",
+    "question": "Du förklarar Morpheus pricing-modellen. Vilka objekt är centrala i modellen?",
     "options": [
       "Service plans",
       "Price sets",
@@ -2405,7 +2405,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka currency conversion providers stöds enligt kursen? (Välj alla som stämmer)",
+    "question": "Du behöver valutaomräkning mellan master tenant och subtenant. Vilka providers stöds?",
     "options": [
       "Open Exchange Rates",
       "Fixer.io",
@@ -2442,7 +2442,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "multi",
     "difficulty": "hard",
-    "question": "Vilka mekanismer kan ändra eller överstyra pricing? (Välj alla som stämmer)",
+    "question": "Du behöver justera eller överstyra priset som visas vid provisioning. Vilka mekanismer kan användas?",
     "options": [
       "Price adjustment",
       "Price sets på instance types och layouts",
@@ -2599,7 +2599,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka guidance recommendation-perioder stöds? (Välj alla som stämmer)",
+    "question": "Du aktiverar cost guidance och rightsizing. Vilka tidsperioder kan rekommendationerna baseras på?",
     "options": [
       "30 dagar",
       "60 dagar",
@@ -2620,7 +2620,7 @@ const QUESTIONS = [
     "moduleName": "Plans, Prices, and Costs",
     "type": "multi",
     "difficulty": "medium",
-    "question": "Vilka scopes kan budgets ha? (Välj alla som stämmer)",
+    "question": "Du skapar budgets i Morpheus. Vilka scopes kan en budget kopplas till?",
     "options": [
       "Accounts/Tenants",
       "Clouds",
